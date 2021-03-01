@@ -1,0 +1,9 @@
+<div class="main-container">
+  <app-usuario *ngFor="let usuario of usuarios"
+  [usuario]="usuario"
+  (deleteUsuario)="deleteUsuario($event)"> </app-usuario>
+</div>
+<div class="main-container">
+  <input type="button" value="Añadir un nuevo usuario"
+     routerLink="/addUser"/>
+</div>

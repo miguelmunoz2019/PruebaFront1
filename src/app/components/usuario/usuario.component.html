@@ -1,0 +1,28 @@
+<div class="row">
+  <div class="foto">
+    <img src="{{usuario.foto}}" alt="alternatetext">
+  </div>
+  <div class="nombre">
+        {{usuario.Nombre}}
+  </div>
+  <div class="cedula">
+    {{usuario.cedula }}
+  </div>
+  <div class="lista">
+      {{usuario.exponible}}
+  </div>
+  <div class="actions">
+    <button (click)="onDelete(usuario)" type="button">Eliminar</button>
+  </div>
+
+
+  <div class="actions">
+      <input type="text" name="id" id="" [(ngModel)]="id">
+    <button (click)="onSubmit()" type="button">Alquilar</button>
+  </div>
+  <div class="actions">
+      <input type="text" name="id" id="" [(ngModel)]="id">
+    <button (click)="devolver()" type="button">Devolver</button>
+  </div>
+
+</div>

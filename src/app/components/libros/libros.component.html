@@ -1,0 +1,10 @@
+<div class="main-container">
+  <app-libro *ngFor="let libro of libros"
+  [libro]="libro"
+  (deleteLibro)="deleteLibro($event)"> </app-libro>
+</div>
+
+<div class="main-container">
+  <input type="button" value="Añadir un nuevo libro"
+     routerLink="/add"/>
+</div>
